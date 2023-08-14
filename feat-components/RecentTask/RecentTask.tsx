@@ -29,6 +29,20 @@ const TaskData = [
     field: "개발",
     thumbnail: "https://picsum.photos/64",
   },
+  {
+    date: "2020-12",
+    title: "신개념 유튜버 놀이터: 인썰",
+    skills: ["JS"],
+    field: "개발",
+    thumbnail: "https://picsum.photos/64",
+  },
+  {
+    date: "2020-12",
+    title: "퍼블리싱",
+    skills: ["JS"],
+    field: "퍼블리싱",
+    thumbnail: "https://picsum.photos/64",
+  },
 ];
 
 const RecentTask = () => {

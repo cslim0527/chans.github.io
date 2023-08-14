@@ -1,7 +1,8 @@
 import React from "react";
+import Resume from "@/feat-components/Resume";
 
 const InfoPage = () => {
-  return <div>InfoPage</div>;
+  return <Resume />;
 };
 
 export default InfoPage;

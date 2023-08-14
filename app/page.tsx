@@ -1,10 +1,9 @@
-import RecentTask from "@/feat-components/RecentTask";
+import InfoPage from "./info/page";
 
 export default function Home() {
   return (
     <div>
-      <h1>Home Page</h1>
-      <RecentTask />
+      <InfoPage />
     </div>
   );
 }

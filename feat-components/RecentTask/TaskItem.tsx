@@ -92,7 +92,7 @@ const SkillIcon = styled.span`
   color: #000;
   border-radius: 4px;
   padding: 0 7px 2px 7px;
-  background-color: #fadb69;
+  background-color: ${colors.secondary};
 `;
 
 const ImageBox = styled.div`

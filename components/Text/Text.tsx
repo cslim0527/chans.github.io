@@ -8,7 +8,7 @@ type TextSize = `${string}${SizeUnit}`;
 interface TextProps {
   color?: CSSProperties["color"];
   size?: TextSize;
-  variant?: "KBO";
+  family?: "KBO";
   weight?: 300 | 500 | 700;
   children: React.ReactNode;
 }
@@ -16,12 +16,12 @@ interface TextProps {
 const Text = ({
   color,
   size = "1rem",
-  variant = "KBO",
+  family = "KBO",
   weight = 300,
   children,
 }: TextProps) => {
   return (
-    <Container color={color} size={size} weight={weight} variant={variant}>
+    <Container color={color} size={size} weight={weight} family={family}>
       {children}
     </Container>
   );
@@ -32,6 +32,6 @@ export default Text;
 const Container = styled.span<Omit<TextProps, "children">>`
   color: ${({ color }) => color};
   font-size: ${({ size }) => size};
-  font-family: ${({ variant }) => variant};
+  font-family: ${({ family }) => family};
   font-weight: ${({ weight }) => weight};
 `;
